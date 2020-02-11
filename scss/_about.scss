@@ -5,9 +5,9 @@
     height: 50vh;
     width: 100%;
     background: linear-gradient(
-        to right,
+        to top,
         rgba($primary-color, 0.9),
-        rgba($primary-color, 0.6)
+        rgba($primary-color, 0.7)
       ),
       url('../img/bio-img.jpg') center bottom;
     background-size: cover;
@@ -38,7 +38,7 @@
     grid-gap: 2rem;
 
     &_job {
-      background: lighten($primary-color, 10%);
+      background: lighten($primary-color, 5%);
       padding: 0.5rem;
       border-bottom: 5px solid $secondary-color;
 
@@ -48,7 +48,7 @@
       }
 
       h6 {
-        margin: 0.3 0;
+        margin: 0.5rem 0;
       }
     }
   }
