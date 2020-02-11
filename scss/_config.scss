@@ -1,0 +1,22 @@
+$primary-color: #31393c;
+$secondary-color: #f79824;
+$accent-color: #f3e8ee;
+$main-font: 'Nunito', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #31393c;
+  } @else {
+    @return #f3e8ee;
+  }
+}
